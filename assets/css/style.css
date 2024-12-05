@@ -1,0 +1,333 @@
+.container,
+.container-fluid {
+    min-height: 100vh;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+div {
+    max-width:
+}
+
+.menu-card {
+    border-radius: 60px;
+    background: #938540f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.menu-card-icon {
+    width: 50%;
+    height: 35%;
+}
+
+.card {
+    height: 100%;
+    box-shadow: 0px 0px 10px black;
+    border: none
+}
+
+.card-img-top {
+    height: 220px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+body {
+    font-size: calc(10px + 0.2vw + 0.2vh);
+}
+
+#body-wiadomosci {
+    background: rgb(240, 240, 235);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-submit {
+    height: calc(20px + 1vw + 1vh);
+    background: rgb(82, 91, 68);
+    transition: 0.5s all;
+    color: white;
+    font-weight: bold;
+    border-bottom: 0px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#search-submit:hover {
+    font-size: calc(13px + 0.2vw + 0.2vh);
+    transition: 0.5s all;
+    cursor: pointer;
+    background: rgb(57, 63, 47);
+}
+
+#search-keyword {
+    height: calc(20px + 1vw + 1vh);
+    background: none !important;
+    color: black;
+    border-top: 0;
+    border-left: 0;
+    text-align: center;
+    border-bottom-right-radius: 15px;
+    font-size: 1.4rem;
+}
+
+#search-keyword::placeholder {
+    color: black;
+    font-style: italic;
+}
+
+#search-keyword:focus {
+    outline: none;
+}
+
+#search-keyword:-webkit-autofill,
+#search-keyword:-moz-autofill {
+    background: rgb(133, 169, 143) !important;
+}
+
+#search-keyword::selection {
+    background: rgb(133, 169, 143);
+}
+
+.article-btn {
+    border: none;
+    width: calc(40px + 7vh + 8vw);
+    transition: 0.5s all;
+    background: rgb(90, 108, 87) !important;
+    color: white;
+}
+
+.article-btn:hover {
+    transition: 0.5s all;
+    background: rgb(68, 82, 66) !important;
+}
+
+
+.category {
+    padding: 10px 10px;
+    border-bottom-right-radius: 15px;
+    background: rgb(133, 169, 143, 0.95);
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    width: auto;
+    position: absolute;
+}
+
+.category::first-letter {
+    text-transform: uppercase;
+}
+
+.country {
+    padding: 4px 10px;
+    background: rgb(133, 169, 143, 0.95);
+    width: auto;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+
+.country::first-letter {
+    text-transform: uppercase;
+}
+
+.date {
+    text-align: right;
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+.item {
+    background: rgb(133, 169, 143) !important;
+}
+
+.selectize-input {
+    border-radius: 15px !important;
+}
+
+#search-sort {
+    border-radius: 15px;
+    padding: 5px 20px;
+}
+
+option:hover {
+    background-color: rgb(133, 169, 143)
+}
+
+.sort {
+    padding: 7.5px 20px;
+    border-radius: 15px;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.active {
+    background: rgb(133, 169, 143);
+    color: white;
+    transition: 0.5s all;
+}
+
+.checkbox-wrapper-64 input[type="checkbox"] {
+    visibility: hidden;
+    display: none;
+}
+
+.checkbox-wrapper-64 *,
+.checkbox-wrapper-64 ::after,
+.checkbox-wrapper-64 ::before {
+    box-sizing: border-box;
+}
+
+.checkbox-wrapper-64 .switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+.checkbox-wrapper-64 .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkbox-wrapper-64 .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border: 1px solid #adb5bd;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.checkbox-wrapper-64 .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 20px;
+    left: 0.27em;
+    bottom: 0.25em;
+    background-color: #adb5bd;
+    transition: .4s;
+}
+
+.checkbox-wrapper-64 input:checked+.slider {
+    background-color: rgb(133, 169, 143);
+    border: 1px solid rgb(133, 169, 143);
+}
+
+.checkbox-wrapper-64 input:focus+.slider {
+    box-shadow: 0 0 1px rgb(133, 169, 143);
+}
+
+.checkbox-wrapper-64 input:checked+.slider:before {
+    transform: translateX(1.4em);
+    background-color: #fff;
+}
+
+.icon {
+    position: absolute;
+    right: 0;
+    width: 15%;
+}
+
+input:-webkit-autofill {
+    background-color: #f0f0f0 !important;
+    /* Kolor tła */
+    color: #333 !important;
+    /* Kolor tekstu */
+    transition: background-color 5000s ease-in-out 0s;
+    /* Wydłużenie przejścia dla koloru tła */
+}
+
+/* Dodatkowe style w Firefox dla autouzupełniania */
+input:-moz-autofill {
+    background-color: #f0f0f0 !important;
+    color: #333 !important;
+}
+
+.loader {
+    position: absolute;
+    left: 50%;
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid rgb(82, 91, 68);
+    animation:
+        l20-1 0.8s infinite linear alternate,
+        l20-2 1.6s infinite linear;
+}
+
+@keyframes l20-1 {
+    0% {
+        clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%)
+    }
+
+    12.5% {
+        clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%)
+    }
+
+    25% {
+        clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100%)
+    }
+
+    50% {
+        clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%)
+    }
+
+    62.5% {
+        clip-path: polygon(50% 50%, 100% 0, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%)
+    }
+
+    75% {
+        clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100%)
+    }
+
+    100% {
+        clip-path: polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100%)
+    }
+}
+
+@keyframes l20-2 {
+    0% {
+        transform: scaleY(1) rotate(0deg)
+    }
+
+    49.99% {
+        transform: scaleY(1) rotate(135deg)
+    }
+
+    50% {
+        transform: scaleY(-1) rotate(0deg)
+    }
+
+    100% {
+        transform: scaleY(-1) rotate(-135deg)
+    }
+}

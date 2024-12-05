@@ -1,0 +1,12 @@
+<Files "proxy.php">
+    SetEnvIf Referer "kamil-test-spaw.online" RefererAllowed
+    Order Deny,Allow
+    Deny from all
+    Allow from env=RefererAllowed
+</Files>
+<Files "proxy-title.php">
+    SetEnvIf Referer "kamil-test-spaw.online" RefererAllowed
+    Order Deny,Allow
+    Deny from all
+    Allow from env=RefererAllowed
+</Files>
