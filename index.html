@@ -20,66 +20,68 @@
       </div>
     </div>
     <div class="row my-4">
-      <div class="col-12 col-lg-2 offset-lg-2 text-center">
-        <label for="language">
-          <p>Język artykułów</p>
-        </label>
-        <br>
-        <select id="language" name="language">
-          <option value="pl" selected>Polski</option>
-          <option value="en">Angielski</option>
-          <option value="de">Niemiecki</option>
-          <option value="fr">Francuski</option>
-          <option value="uk">Ukraiński</option>
-          <option value="ru">Rosyjski</option>
-          <option value="zh">Chiński</option>
-        </select>
-      </div>
-      <div class="col-12 col-lg-1 text-center mt-3 mt-lg-0">
-        <p>Tylko nagłówki</p>
-        <div class="checkbox-wrapper-64">
-          <label class="switch">
-            <input type="checkbox" id="search-titles">
-            <span class="slider"></span>
-          </label>
+      <div class="col-12 col-lg-10 mx-lg-auto">
+        <div class="row">
+          <div class="col-12 col-lg-2 text-center mx-auto">
+            <label for="language">
+              <p>Język artykułów</p>
+            </label>
+            <br>
+            <select id="language" name="language">
+              <option value="pl" selected>Polski</option>
+              <option value="en">Angielski</option>
+              <option value="de">Niemiecki</option>
+              <option value="fr">Francuski</option>
+              <option value="uk">Ukraiński</option>
+              <option value="ru">Rosyjski</option>
+              <option value="zh">Chiński</option>
+            </select>
+          </div>
+          <div class="col-6 col-lg-2 text-center mt-3 mt-lg-0 mx-auto">
+            <p>Tylko nagłówki</p>
+            <div class="checkbox-wrapper-64">
+              <label class="switch">
+                <input type="checkbox" id="search-titles">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2 text-center mt-3 mt-lg-0 mx-auto">
+            <p>Najlepsze serwisy</p>
+            <div class="checkbox-wrapper-64">
+              <label class="switch">
+                <input type="checkbox" id="search-prioritydomain">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 text-center mb-4 px-0 my-lg-0 mx-auto">
+              <p class="mb-4">Sortuj od:</p>
+            <span id="new" class="sort active">Najnowszych</span>
+            <span id="old" class="sort">Najstarszych</span>
+          </div>
+          <div class="col-12 col-lg-2 text-center">
+            <label for="country">
+              <p>Kraj wyszukiwania</p>
+            </label>
+            <select multiple id="country" placeholder="Wybierz">
+              <option value="pl" selected>Polska</option>
+              <option value="us">Stany Zjednoczone</option>
+              <option value="gb">Wielka Brytania</option>
+              <option value="de">Niemcy</option>
+              <option value="ua">Ukraina</option>
+              <option value="fr">Francja</option>
+              <option value="ru">Rosja</option>
+              <option value="cn">Chiny</option>
+            </select>
+          </div>
         </div>
       </div>
-      <div class="col-12 col-lg-2 text-center mt-3 mt-lg-0">
-        <p>Tylko najlepsze serwisy</p>
-        <div class="checkbox-wrapper-64">
-          <label class="switch">
-            <input type="checkbox" id="search-prioritydomain">
-            <span class="slider"></span>
-          </label>
-        </div>
-      </div>
-      <div class="col-12 col-lg-2 text-center my-4   my-lg-0">
-        <label for="sort">
-          <p>Sortuj od:</p>
-        </label>
-        <br>
-        <span id="new" class="sort active">Najnowszych</span>
-        <span id="old" class="sort">Najstarszych</span>
-      </div>
-      <div class="col-12 col-lg-2 text-center">
-        <label for="country">
-          <p>Kraj wyszukiwania</p>
-        </label>
-        <select multiple id="country" placeholder="Wybierz">
-          <option value="pl" selected>Polska</option>
-          <option value="us">Stany Zjednoczone</option>
-          <option value="gb">Wielka Brytania</option>
-          <option value="de">Niemcy</option>
-          <option value="ua">Ukraina</option>
-          <option value="fr">Francja</option>
-          <option value="ru">Rosja</option>
-          <option value="cn">Chiny</option>
-        </select>
-      </div>
+      
     </div>
     <div id="found" class="text-center offset-lg-8">
     </div>
-    <div class="loader" style="display: none" id="loader"></div>
+    <div class="loader mx-auto" style="display: none" id="loader"></div>
     <div class="row mx-lg-5 px-lg-5" id="row-3">
     </div>
     <!-- Główny kontener bootstrap -->
