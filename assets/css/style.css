@@ -7,27 +7,6 @@ body,
 html {
     overflow-x: hidden;
 }
-
-div {
-    max-width:
-}
-
-.menu-card {
-    border-radius: 60px;
-    background: #938540f1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    z-index: 1;
-    cursor: pointer;
-}
-
-.menu-card-icon {
-    width: 50%;
-    height: 35%;
-}
-
 .card {
     height: 100%;
     box-shadow: 0px 0px 10px black;
@@ -85,6 +64,7 @@ body {
     color: black;
     border-top: 0;
     border-left: 0;
+    border-color: #525B44;
     text-align: center;
     border-bottom-right-radius: 15px;
     font-size: 1.4rem;
@@ -131,6 +111,8 @@ body {
     text-shadow: 1px 1px black;
     width: auto;
     position: absolute;
+    border-right: 3px solid #525B44;
+    border-bottom: 3px solid #525B44;
 }
 
 .category::first-letter {
@@ -255,6 +237,10 @@ option:hover {
     position: absolute;
     right: 0;
     width: 15%;
+    border-bottom-left-radius: 15px;
+    border-left: 3px solid #525B44;
+    border-bottom: 3px solid #525B44;
+    background: rgb(133, 169, 143, 0.95);
 }
 
 input:-webkit-autofill {

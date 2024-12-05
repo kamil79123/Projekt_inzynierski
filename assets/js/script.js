@@ -45,8 +45,6 @@ function szukaj(sort) {
     const selectedCountry = Array.from(selectCountry.selectedOptions);
     let country = selectedCountry.map(option => option.value).join(',');
     if (search != '' && selectedLanguage != '' && selectedCountry != '') {
-        console.log("selectedLanguage: " + selectedLanguage);
-        console.log("selectedCountry" + selectedCountry);
         fetchNews(search, language, prioritydomain, search_fields, country, sort);
     }
     else {

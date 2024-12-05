@@ -15,11 +15,9 @@ async function fetchNews(search, language, prioritydomain, search_fields, countr
     let query = new URLSearchParams(params).toString();
     let apiUrl;
     if ($('#search-titles').is(':checked')) {
-        console.log('titles dziala');
         apiUrl = "../../proxy-title.php?" + query;
     }
     else {
-        console.log('bez titles');
         apiUrl = "../../proxy.php?" + query;
     }
     let str = '';  // Zmienna przechowująca wygenerowany HTML
@@ -40,12 +38,10 @@ async function fetchNews(search, language, prioritydomain, search_fields, countr
         if (sort == 'new') {
             loadingSpinner.style.display = 'none';
             articles.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
-            console.log("nowszych");
         }
         else {
             loadingSpinner.style.display = 'none';
             articles.sort((a, b) => new Date(a.pubDate) - new Date(b.pubDate));
-            console.log("starszych");
         }
         // Iteracja po artykułach i generowanie HTML
         for (let article of articles) {
